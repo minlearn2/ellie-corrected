@@ -59,6 +59,7 @@ RUN mkdir -p /tmp/elm_bin/0.18.0 && mkdir -p /tmp/elm_bin/0.19.0 \
     && mkdir -p /app/priv/bin \
     && cp -r /tmp/elm_bin/* /app/priv/bin \
     && mkdir -p /app/priv/elm_home \
+    
     && cp /app/run.sh /usr/local/bin \
     && chmod +x /usr/local/bin/run.sh \
 

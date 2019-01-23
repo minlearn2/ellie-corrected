@@ -8,5 +8,10 @@ config :ellie, EllieWeb.Endpoint,
 
 config :ellie, Ellie.Repo,
   adapter: Ecto.Adapters.Postgres,
-  ssl: true,
+  username: "postgres",
+  password: "postgres",
+  database: "ellie",
+  hostname: "database",
+  port: 5432,
+  ssl: false,
   pool_size: 5

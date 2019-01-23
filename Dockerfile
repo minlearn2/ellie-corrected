@@ -15,9 +15,9 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
 
 # Install postgres-client
 RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main" >> /etc/apt/sources.list.d/pgdg.list \
-&& wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | apt-key add - \
-&& apt-get update \
-&& apt-get -yq --no-install-recommends install inotify-tools postgresql-client-9.5
+    && wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | apt-key add - \
+    && apt-get update \
+    && apt-get -yq --no-install-recommends install inotify-tools postgresql-client-9.5
 
 # Install libsysconfcpus
 RUN git clone https://github.com/obmarg/libsysconfcpus.git /usr/local/src/libsysconfcpus \

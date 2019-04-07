@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-set -e
+set PYTHONIOENCODING=utf8
 
 cd /app
 

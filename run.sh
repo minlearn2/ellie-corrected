@@ -1,7 +1,5 @@
 #! /usr/bin/env bash
 
-set PYTHONIOENCODING=utf8
-
 cd /app
 
 until PGPASSWORD=postgres psql -h "database" -U "postgres" -c '\q'; do
